@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Welcome -->
+<div id="welcome">
+  <h1 id="typing"></h1>
+  <button onclick="enterSite()">Click to Enter 💖</button>
+</div>
+
+<audio id="music" loop>
+  <source src="music/song.mp3">
+</audio>
+
+<div id="main">
+
+  <!-- Message -->
+  <div id="messageBox">
+    <p id="messageText"></p>
+  </div>
+
+  <!-- Magazine -->
+  <div id="bookContainer">
+    <img id="page" src="magazine/pages/page1.jpg">
+  </div>
+
+  <!-- Button -->
+  <div id="journeyContainer">
+    <button onclick="startJourney()">💖Our journey💖</button>
+  </div>
+
+  <!-- Video -->
+  <div id="videoContainer">
+    <video id="birthdayVideo" controls onended="showSpecial()">
+      <source src="video/birthday.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- 💖 WHY YOU'RE SPECIAL -->
+  <div id="specialContainer">
+    <h1>💖 Why You’re So Special 💖</h1>
+
+    <div class="cardBox">
+
+      <div class="card">
+        <div class="inner">
+          <div class="front">❤️ Kind</div>
+          <div class="back">You always care about everyone 💕</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="inner">
+          <div class="front">😂 Funny</div>
+          <div class="back">You make me laugh every time 😄</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="inner">
+          <div class="front">🤝 Supportive</div>
+          <div class="back">You’re always there for me 💖</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="inner">
+          <div class="front">🌟 Unique</div>
+          <div class="back">There’s no one like you ✨</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ✅ CORRECT PLACE -->
+    <p id="lastLine" style="display:none; font-size: 24px; margin-top: 20px; color:white;">
+      Just one last thing...
+    </p>
+
+  </div>
+
+</div>
+
+<!-- ✅ ONLY ONE POPUP -->
+<div id="finalPopup">
+  <div class="popupContent">
+    <h1>💖 one last thing 💖</h1>
+    <p id="popupText"></p>
+    <button onclick="closePopup()">Close 💕</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
